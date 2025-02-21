@@ -1,0 +1,104 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+a {
+    text-decoration: none;
+}
+
+.center {
+    padding-left: calc(50% - 600px);
+    padding-right: calc(50% - 600px);
+}
+
+body {
+    font-family: "Montserrat", sans-serif;
+}
+
+button {
+    cursor: pointer;
+}
+
+
+.header {
+    background: #E1FF8F;
+    background-image: url(images/star1.png), url(images/star2.png), url(images/starbig.svg);
+    background-position: 63px 69px, calc(100% - 344px) calc(100% - 149px), 230% -330px;
+    background-repeat: no-repeat;
+}
+
+
+.header__title{
+    color: #202027;
+    font-family: Montserrat;
+    font-size: 64px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    max-width: 769px;
+    max-height: 358px;
+    padding-top: 196px;
+}
+
+.header__text {
+    color: #202027;
+    font-family: Montserrat;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 32px;
+    padding-top: 24px;
+    max-width: 720px;
+}
+
+.header__text_fat {
+    color: #202027;
+    font-family: Montserrat;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 32px;
+}
+
+.header__button {
+    width: 247px;
+    height: 66px;
+    border: 1px solid rgb(32, 32, 39);
+    border-radius: 60px;
+    background: rgb(32, 32, 39);
+    color: #FFFFFF;
+    font-size: 24px;
+    font-weight: 600;
+    text-align: center;
+    margin-top: 48px;
+    margin-bottom: 156px;
+    font-family: "Montserrat";
+}
+.header__button:hover {
+    background-color: white;
+    color: black;
+}
+
+.scrollbar {
+    width: 3220px;
+    height: 90px;
+    display: flex;
+    align-items: center;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(50px);
+    background: rgb(188, 236, 48);
+    flex-wrap: wrap;
+    overflow: hidden;
+    max-height: 87px;
+}
+
+.scrollbar__text {
+    font-family: "Montserrat";
+    color: rgb(32, 32, 39);
+    font-size: 30px;
+    font-weight: 700;
+    text-transform: uppercase;
+    padding-right: 51px;
+    padding-left: 51px;
+}
