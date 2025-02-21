@@ -174,7 +174,7 @@ button {
     background: url(images/card4.svg);
 }
 .img__item_5 {
-    background: url(images/card5.svg);
+    background: url(images/card5.svg), url(images/1stone.png);
 }
 .img__item_6 {
     background: url(images/card6.svg);
