@@ -61,7 +61,10 @@ button {
     line-height: 32px;
 }
 
-.header__button {
+.header__button { 
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
     width: 247px;
     height: 66px;
     border: 1px solid rgb(32, 32, 39);
@@ -81,26 +84,29 @@ button {
 }
 
 .scrollbar {
-    width: 3220px;
     height: 90px;
     display: flex;
     align-items: center;
     border: 1px solid rgba(255, 255, 255, 0.2);
     backdrop-filter: blur(50px);
     background: rgb(188, 236, 48);
-    flex-wrap: wrap;
     overflow: hidden;
     max-height: 87px;
+    
 }
 
+.scrollbar__item {
+    display: flex;   
+    padding-left: 51px;
+    flex-shrink: 0;
+    gap: 51px;
+}
 .scrollbar__text {
-    font-family: "Montserrat";
+   
     color: rgb(32, 32, 39);
     font-size: 30px;
     font-weight: 700;
     text-transform: uppercase;
-    padding-right: 51px;
-    padding-left: 51px;
 }
 
 .games__container {
@@ -142,49 +148,35 @@ button {
     align-items: start;
 }
 
-.img__card {
+.card {
     display: flex;
     flex-direction: column;
     grid-column: span 4;
     background-color: #FFFFFF ;
     border-radius: 30px;
 }
-.img__card_top {
+
+.card:hover {
+    transform: scale(1.05);
+    transition: all 1s;
+}
+
+.card__card_top {
     margin-top: -40px;
 }
 
-.img__item {
+.card__item {
     border-radius: 30px;
     height: 314px;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
 }
-
-.img__item_1 {
-    background: url(images/card1.svg);
-}
-.img__item_2 {
-    background: url(images/card2.svg);
-}
-.img__item_3 {
-    background: url(images/card3.svg); 
-}
-.img__item_4 {
-    background: url(images/card4.svg);
-}
-.img__item_5 {
-    background: url(images/card5.svg);
-}
-.img__item_6 {
-    background: url(images/card6.svg);
-}
-.stone {
+.card__img {
     position: absolute;
-    background-position: 54.38px, 136.54px;
 }
 
-.img__number {
+.card__number {
     width: 111px;
     height: 36px;
     color: rgb(32, 32, 39);
@@ -200,12 +192,15 @@ button {
     margin-bottom: 10px;
 }
 
-.img__text {
+.card__text {
     color: rgb(32, 32, 39);
     font-size: 32px;
     font-weight: 700;
     text-align: left;
-    padding: 0 36px 32px;
+    padding: 0 32px 36px;
     max-width: 372px;
+}
+.card__text_stone {
+    padding-right: 45px;
 }
 
