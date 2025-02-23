@@ -174,10 +174,14 @@ button {
     background: url(images/card4.svg);
 }
 .img__item_5 {
-    background: url(images/card5.svg), url(images/1stone.png);
+    background: url(images/card5.svg);
 }
 .img__item_6 {
     background: url(images/card6.svg);
+}
+.stone {
+    position: absolute;
+    background-position: 54.38px, 136.54px;
 }
 
 .img__number {
