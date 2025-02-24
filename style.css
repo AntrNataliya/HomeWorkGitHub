@@ -113,7 +113,6 @@ button {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    gap: 24px;
     align-self: stretch;
     background: #202027;
 }
@@ -126,6 +125,7 @@ button {
     font-weight: 700;
     line-height: normal;
     padding-top: 94px;
+    padding-bottom: 24px;
 }
 
 .games__text {
@@ -146,6 +146,7 @@ button {
     grid-template-rows: repeat(3, 1fr);
     gap: 32px;
     align-items: start;
+    padding-top: 72px;
 }
 
 .card {
@@ -172,10 +173,6 @@ button {
     background-repeat: no-repeat;
     background-position: center;
 }
-.card__img {
-    position: absolute;
-}
-
 .card__number {
     width: 111px;
     height: 36px;
