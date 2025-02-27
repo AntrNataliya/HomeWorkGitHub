@@ -51,13 +51,25 @@
         }
     }
 
-    .img__games {
+    .games__container {
         display: none;
     }
      
     .mini-games__title {
         font-size: 40px;
         font-weight: 700;
-
     }
+
+    .mini-card {
+        margin-top: 32px;
+        display: flex;
+        max-height: none;
+        flex-direction: column;
+        
+    }
+    .mini-card_L {
+       flex-direction: column-reverse;
+    }
+    
+
 }
