@@ -51,11 +51,11 @@
         }
     }
 
-    .games__container {
+    .games-box {
         display: none;
     }
      
-    .mini-games__title {
+    .mini-title {
         font-size: 40px;
         font-weight: 700;
     }
@@ -70,6 +70,5 @@
     .mini-card_L {
        flex-direction: column-reverse;
     }
-    
 
 }

@@ -108,7 +108,7 @@ button {
   text-transform: uppercase;
 }
 
-.games__container {
+.games-box {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -116,7 +116,7 @@ button {
   background: #202027;
 }
 
-.games {
+.games-title {
   color: #FFF;
   font-family: Montserrat;
   font-size: 64px;
@@ -127,7 +127,7 @@ button {
   padding-bottom: 24px;
 }
 
-.games__text {
+.games-text {
   color: #FFF;
   font-family: Montserrat;
   font-size: 24px;
@@ -137,7 +137,7 @@ button {
   max-width: 788px;
 }
 
-.img__games {
+.games-img {
   max-height: 1060px;
   max-width: 1200px;
   display: grid;
@@ -161,7 +161,7 @@ button {
   transition: all 1s;
 }
 
-.card__card_top {
+.card_top {
   margin-top: -40px;
 }
 
@@ -202,7 +202,7 @@ button {
   padding-right: 45px;
 }
 
-.mini-games__container {
+.mini-games {
   position: relative;
   padding-top: 46px;
   padding-bottom: 144px;
@@ -211,7 +211,14 @@ button {
   flex-direction: column;
   background: rgb(32, 32, 39);
 }
-.mini-games__title {
+
+.mini-gamesBox {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+
+.mini-title {
   color: rgb(255, 255, 255);
   font-family: inherit;
   font-size: 64px;
@@ -219,11 +226,6 @@ button {
   line-height: 78px;
   text-align: left;
   margin-bottom: 40px;
-}
-.mini-games__box {
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: column;
 }
 
 .mini-card {
@@ -330,10 +332,10 @@ button {
     line-height: 17.6px;
     letter-spacing: 4%;
   }
-  .games__container {
+  .games-box {
     display: none;
   }
-  .mini-games__title {
+  .mini-title {
     font-size: 40px;
     font-weight: 700;
   }
