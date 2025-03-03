@@ -61,4 +61,4 @@ const user = {
 //задание 10
 
 let userName = prompt('Ваше имя');
-alert('Привет ${userName}!');
+alert(`Привет ${userName}!`);
