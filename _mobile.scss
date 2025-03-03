@@ -65,10 +65,31 @@
         display: flex;
         max-height: none;
         flex-direction: column;
-        
-    }
+
+        &__img {
+            width: 100%;
+        }
+
+        &__text {
+            font-size: 16px;
+        }
+
+        &__btn {
+            font-size: 16px;
+        }
+      }
     .mini-card_L {
-       flex-direction: column-reverse;
+        flex-direction: column-reverse;
     }
 
-}
+    .mini-card__name {
+        font-weight: 700;
+        font-size: 32px;
+        line-height: 39.01px;           
+    } 
+    .svg {
+        width: 20px;
+        height: 20px;
+    } 
+}  
+    
