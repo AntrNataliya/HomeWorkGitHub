@@ -52,7 +52,7 @@ button {
     max-width: 720px;
 }
 
-.header__text_fat {
+.header__text-fat {
     color: #202027;
     font-family: Montserrat;
     font-size: 24px;
@@ -109,7 +109,7 @@ button {
     text-transform: uppercase;
 }
 
-.games__container {
+.games-container {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -117,7 +117,7 @@ button {
     background: #202027;
 }
 
-.games {
+.games-container__title {
     color: #FFF;
     font-family: Montserrat;
     font-size: 64px;
@@ -128,7 +128,7 @@ button {
     padding-bottom: 24px;
 }
 
-.games__text {
+.games-container__text {
     color: #FFF;
     font-family: Montserrat;
     font-size: 24px;
@@ -138,7 +138,7 @@ button {
     max-width: 788px;
 }
 
-.img__games {
+.card {
     max-height: 1060px;
     max-width: 1200px;
     display: grid;
@@ -149,7 +149,7 @@ button {
     padding-top: 72px;
 }
 
-.card {
+.card__box {
     display: flex;
     flex-direction: column;
     grid-column: span 4;
@@ -157,16 +157,16 @@ button {
     border-radius: 30px;
 }
 
-.card:hover {
+.card__box:hover {
     transform: scale(1.05);
     transition: all 1s;
 }
 
-.card__card_top {
+.card__box_top {
     margin-top: -40px;
 }
 
-.card__item {
+.card__img {
     border-radius: 30px;
     height: 314px;
     background-size: cover;
@@ -283,6 +283,10 @@ button {
             border-radius: 30px;
         }
 
+}
+.mini-card__btn:hover {
+    background-color: white;
+    color: black;
 }
 
 .footer {

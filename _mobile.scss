@@ -49,9 +49,13 @@
             letter-spacing: 4%;
 
         }
+
+        &__svg {
+            height: 20px;
+        }
     }
 
-    .games__container {
+    .games-container {
         display: none;
     }
      
@@ -65,11 +69,15 @@
         display: flex;
         max-height: none;
         flex-direction: column;
+
+        &__img {
+            max-width: 100%;
+            max-height: 100%;
+        }
         
     }
     .mini-card_L {
        flex-direction: column-reverse;
     }
-    
 
 }
