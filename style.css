@@ -278,6 +278,11 @@ button {
   border-radius: 30px;
 }
 
+.mini-card__btn:hover {
+  background-color: white;
+  color: black;
+}
+
 .footer {
   height: 150px;
   background-color: rgb(189, 237, 53);
@@ -330,6 +335,9 @@ button {
     line-height: 17.6px;
     letter-spacing: 4%;
   }
+  .scrollbar__svg {
+    height: 20px;
+  }
   .games-container {
     display: none;
   }
@@ -342,6 +350,10 @@ button {
     display: flex;
     max-height: none;
     flex-direction: column;
+  }
+  .mini-card__img {
+    max-width: 100%;
+    max-height: 100%;
   }
   .mini-card_L {
     flex-direction: column-reverse;
