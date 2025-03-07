@@ -301,7 +301,10 @@ button {
     background-image: url(images/star1.png), url(images/star2.png), url(img/Vectormob.svg);
     background-position: 63px 69px, calc(100% - 344px) calc(100% - 149px), 100% 0px;
     background-repeat: no-repeat;
-    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
   }
   .header__title {
     font-family: Montserrat;
@@ -311,7 +314,7 @@ button {
     letter-spacing: 0px;
     text-align: center;
   }
-  .header__button center {
+  .header__button {
     font-family: Montserrat;
     font-weight: 600;
     font-size: 16px;
@@ -350,6 +353,17 @@ button {
     display: flex;
     max-height: none;
     flex-direction: column;
+  }
+  .mini-card__name {
+    font-size: 32px;
+  }
+  .mini-card__text {
+    font-size: 16px;
+  }
+  .mini-card__btn {
+    font-size: 16px;
+    height: 55px;
+    width: 285px;
   }
   .mini-card__img {
     max-width: 100%;
