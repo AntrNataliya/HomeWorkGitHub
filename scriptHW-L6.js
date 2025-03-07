@@ -55,11 +55,11 @@ for (let i = dayFriday; i <= allDay; i += 7) {
 
 
 let k = 100;
-let num = 0;
+let number = 0;
 
 while (k >= 0) {
     k -= 7;
     console.log(k);
     num++;
 }
-console.log(`Количество циклов; ${num}`);
+console.log(`Количество циклов; ${number}`);
