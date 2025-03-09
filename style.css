@@ -222,7 +222,6 @@ button {
 }
 .mini-games__box {
   display: flex;
-  flex-wrap: wrap;
   flex-direction: column;
 }
 
@@ -348,6 +347,9 @@ button {
     font-size: 40px;
     font-weight: 700;
   }
+  .mini-games__box {
+    width: 100%;
+  }
   .mini-card {
     margin-top: 32px;
     display: flex;
@@ -363,9 +365,9 @@ button {
   .mini-card__btn {
     font-size: 16px;
     height: 55px;
-    width: 285px;
+    width: 100%;
   }
-  .mini-card__img {
+  .mini-card__btn:hover(none) .mini-card__img {
     max-width: 100%;
     max-height: 100%;
   }

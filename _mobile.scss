@@ -66,6 +66,9 @@
         font-size: 40px;
         font-weight: 700;
     }
+    .mini-games__box {
+        width: 100%;
+    }
 
     .mini-card {
         margin-top: 32px;
@@ -84,9 +87,10 @@
         &__btn {
             font-size: 16px;
             height: 55px;
-            width: 285px;
+            width: 100%;
         }
-
+        &__btn:hover(none)
+        
         &__img {
             max-width: 100%;
             max-height: 100%;
