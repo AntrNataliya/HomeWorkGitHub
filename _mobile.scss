@@ -1,0 +1,104 @@
+@media (max-width: 767px) {
+
+    .center {
+        padding-left: 57px;
+        padding-right: 56px;
+    }
+
+    .header {
+        background: #E1FF8F;
+        background-image: url(images/star1.png), url(images/star2.png), url(img/Vectormob.svg);
+        background-position: 63px 69px, calc(100% - 344px) calc(100% - 149px), 100% 0px;
+        background-repeat: no-repeat;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-items: center;
+
+        &__title {
+            font-family: Montserrat;
+            font-weight: 700;
+            font-size: 40px;
+            line-height: 48.76px;
+            letter-spacing: 0px;
+            text-align: center;
+
+        }
+        &__button {
+            font-family: Montserrat;
+            font-weight: 600;
+            font-size: 16px;
+            line-height: 22.67px;
+            letter-spacing: 0%;
+            text-align: center;
+            gap: 10px;
+            border-width: 1px;
+            border-radius: 60px;
+            padding-right: 28px;
+            padding-left: 28px;
+            margin-top: 36px;
+            margin-bottom: 131px;
+        }
+        
+    }
+    
+    .scrollbar {
+        height: 51px;
+
+        &__text {
+            font-weight: 700;
+            font-size: 16px;
+            line-height: 17.6px;
+            letter-spacing: 4%;
+
+        }
+
+        &__svg {
+            height: 20px;
+        }
+    }
+
+    .games-container {
+        display: none;
+    }
+     
+    .mini-games__title {
+        font-size: 40px;
+        font-weight: 700;
+    }
+    .mini-games__box {
+        width: 100%;
+    }
+
+    .mini-card {
+        margin-top: 32px;
+        display: flex;
+        max-height: none;
+        flex-direction: column;
+
+        &__name {
+            font-size: 32px;
+        }
+
+        &__text {
+            font-size: 16px;
+        }
+
+        &__btn {
+            font-size: 16px;
+            height: 55px;
+            width: 100%;
+        }
+        &__btn:hover(none)
+        
+        &__img {
+            max-width: 100%;
+            max-height: 100%;
+        }
+        
+    }
+    .mini-card_L {
+       flex-direction: column-reverse;
+    }
+
+}
