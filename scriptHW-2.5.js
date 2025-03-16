@@ -32,8 +32,11 @@ function age() {
         alert('Вы ввели неправильное значение');
     } else if (age >= 0 && age <= 12) {
         alert('Привет, друг!');
-    } else {
+    } else if (age >= 13) {
         alert('Добро пожаловать!');
+    }
+    else {
+        alert('Вы ввели некорректное значение')
     }
 } 
 
@@ -54,14 +57,15 @@ console.log(calc(7,2));
 
 function getNumber() {
     let number = prompt('Введите число');
+    number = Number(number);
     if(isNaN(number)) {
         return 'Переданный параметр не является числом';
     } else {
-        return `${number} в кубе равняется ${number ** 3}`;
+       alert (`${number} в кубе равняется ${number ** 3}`);
     }
 }
 
-console.log(getNumber());
+getNumber ();
 
 function getArea () {
         return Math.PI * this.radius ** 2;
