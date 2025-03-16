@@ -1,67 +1,67 @@
-// function min(a, b) {
-//     if (a<b) {
-//         return a;
-//     } else {
-//         return b;
-//     }
-// }
+function min(a, b) {
+    if (a<b) {
+        return a;
+    } else {
+        return b;
+    }
+}
 
-// console.log(min(8,4));
-// console.log(min(6,6));
+console.log(min(8,4));
+console.log(min(6,6));
 
-// function isEven(n) {
-//     if (n % 2 === 0) {
-//         return 'Число четное';
-//     } else {
-//         return 'Число нечетное';
-//     }
-// }
+function isEven(n) {
+    if (n % 2 === 0) {
+        return 'Число четное';
+    } else {
+        return 'Число нечетное';
+    }
+}
 
-// console.log(isEven(2));
-// console.log(isEven(3));
-
-
-// const up = (n) => n ** 2;
-
-// console.log(up(5));
+console.log(isEven(2));
+console.log(isEven(3));
 
 
-// function age() {
-//     let age = +prompt('Сколько тебе лет?');
-//     if (age < 0) {
-//         alert('Вы ввели неправильное значение');
-//     } else if (age >= 0 && age <= 12) {
-//         alert('Привет, друг!');
-//     } else {
-//         alert('Добро пожаловать!');
-//     }
-// } 
+const up = (n) => n ** 2;
 
-// age ();
+console.log(up(5));
 
 
-// function calc(a, b) {
-//     if (isNaN(a) || isNaN(b)) {
-//         return 'Одно или оба значения не являются числом';
-//     }
-//     else {
-//         return a*b;
-//     }
-// }
+function age() {
+    let age = +prompt('Сколько тебе лет?');
+    if (age < 0) {
+        alert('Вы ввели неправильное значение');
+    } else if (age >= 0 && age <= 12) {
+        alert('Привет, друг!');
+    } else {
+        alert('Добро пожаловать!');
+    }
+} 
+
+age ();
+
+
+function calc(a, b) {
+    if (isNaN(a) || isNaN(b)) {
+        return 'Одно или оба значения не являются числом';
+    }
+    else {
+        return a*b;
+    }
+}
  
-// console.log(calc(7,2));
+console.log(calc(7,2));
     
 
-// function getNumber() {
-//     let number = prompt('Введите число');
-//     if(isNaN(number)) {
-//         return 'Переданный параметр не является числом';
-//     } else {
-//         return `${number} в кубе равняется ${number ** 3}`;
-//     }
-// }
+function getNumber() {
+    let number = prompt('Введите число');
+    if(isNaN(number)) {
+        return 'Переданный параметр не является числом';
+    } else {
+        return `${number} в кубе равняется ${number ** 3}`;
+    }
+}
 
-// console.log(getNumber());
+console.log(getNumber());
 
 function getArea () {
         return Math.PI * this.radius ** 2;
