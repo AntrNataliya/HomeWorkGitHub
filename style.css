@@ -167,7 +167,6 @@ button {
 
 .card__img {
   border-radius: 30px;
-  height: 314px;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -237,7 +236,6 @@ button {
 .mini-card__inf {
   padding: 48px;
   display: flex;
-  flex-wrap: wrap;
   flex-direction: column;
   align-items: flex-start;
 }
@@ -272,7 +270,6 @@ button {
   width: 247px;
 }
 .mini-card__img {
-  max-width: 600px;
   max-height: 500px;
   border-radius: 30px;
 }
