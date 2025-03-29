@@ -19,3 +19,38 @@ function game1() {
     }
   }
 }
+
+
+function game2() {
+    const operators = ['+', '-', '*', '/'];
+    const operator = operators[Math.floor(Math.random() * operators.length)];
+    
+    let a = Math.floor(Math.random() * 10) + 1;
+    let b = Math.floor(Math.random() * 10) + 1;
+    let result = " ";
+    let userAnswer = "";
+
+    switch(operator) {
+        case "+":
+            userAnswer = +prompt(`Сложите ${a} и ${b}`);
+            result = a + b;
+            break;
+        case "-":
+            userAnswer = +prompt(`Вычтите ${a} из ${b}`);
+            result = a - b;
+            break;  
+        case "*":
+            userAnswer = +prompt(`Умножте ${a} на ${b}`);
+            result = a * b;
+            break;  
+        case "/":
+            userAnswer = +prompt(`Разделите ${a} на ${b}`);
+            result = a / b;
+            break;
+    }
+      if (Number(userAnswer) === result) {
+        alert("Верно");
+    } else {
+        alert("Неверно");
+    }
+}
