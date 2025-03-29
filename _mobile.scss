@@ -10,7 +10,10 @@
         background-image: url(images/star1.png), url(images/star2.png), url(img/Vectormob.svg);
         background-position: 63px 69px, calc(100% - 344px) calc(100% - 149px), 100% 0px;
         background-repeat: no-repeat;
-        overflow: hidden;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-items: center;
 
         &__title {
             font-family: Montserrat;
@@ -21,7 +24,7 @@
             text-align: center;
 
         }
-        &__button center {
+        &__button {
             font-family: Montserrat;
             font-weight: 600;
             font-size: 16px;
@@ -63,6 +66,9 @@
         font-size: 40px;
         font-weight: 700;
     }
+    .mini-games__box {
+        width: 100%;
+    }
 
     .mini-card {
         margin-top: 32px;
@@ -70,6 +76,21 @@
         max-height: none;
         flex-direction: column;
 
+        &__name {
+            font-size: 32px;
+        }
+
+        &__text {
+            font-size: 16px;
+        }
+
+        &__btn {
+            font-size: 16px;
+            height: 55px;
+            width: 100%;
+        }
+        &__btn:hover(none)
+        
         &__img {
             max-width: 100%;
             max-height: 100%;
