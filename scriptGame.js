@@ -20,7 +20,7 @@ function game1() {
   }
 }
 
-
+// Игра Простая Арифметика
 function game2() {
     const operators = ['+', '-', '*', '/'];
     const operator = operators[Math.floor(Math.random() * operators.length)];
@@ -54,7 +54,7 @@ function game2() {
         alert("Неверно");
     }
 }
-
+// Игра Викторина
 function simpleQuiz()  {
     const quiz = [
         {
@@ -85,3 +85,11 @@ function simpleQuiz()  {
     }
     alert(`Вы ответили верно на ${num} вопросов.`);
 }
+
+// Игра Переверни текст
+function reverseWord() {
+    let text = prompt('Введите любой текст.');
+    let reversedText = text.split('').reverse().join('');
+    alert (reversedText);
+}
+reverseWord();
