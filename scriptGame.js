@@ -54,3 +54,34 @@ function game2() {
         alert("Неверно");
     }
 }
+
+function simpleQuiz()  {
+    const quiz = [
+        {
+            question: [`Как называется прямая линия, у которой есть начало, но нет конца?`],
+            options: [`1. Отрезок`, `2. Луч `, `3. Кривая`], 
+            correctAnswer: 2,
+        },
+        {
+            question: [`В каком месте располагался пульт управления Карлсоном?`],
+            options: [`1. На спине`, `2. На животе `, `3. На руке`], 
+            correctAnswer: 2,
+        },
+        {
+            question: [`Главное орудие хоккеиста – это … ?`],
+            options: [`1. Плюшка`, `2. Клюшка `, `3. Коньки`], 
+            correctAnswer: 2,
+        }
+    ]
+    let num = 0;
+    for (let i = 0; i < quiz.length; i++){
+        let quizQuest = Number(prompt(`Выберите правильный ответ.\n${quiz[i].question}\n${quiz[i].options}`));
+        if(quizQuest == quiz[i][`correctAnswer`]){
+            num++;
+            alert(`Вы ответили верно.`);
+        } else {
+            alert (`Вы ответили неверно.`)
+        }
+    }
+    alert(`Вы ответили верно на ${num} вопросов.`);
+}
