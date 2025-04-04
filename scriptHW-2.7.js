@@ -38,7 +38,7 @@ console.log(getRundomNumber());
 function getRundomNumber6(num) {
     return Array.from({ length: Math.floor(num/2)}, () => Math.floor(Math.random() * num));
 }
-console.log(getRundomNumbe6r(10));
+console.log(getRundomNumber6(10));
 
 // Задание 7
 // Создать функцию, которая принимает два целых числа и возвращает случайное число в этом диапазоне.
@@ -49,7 +49,7 @@ function getRundomInt(min, max) {
 console.log(getRundomInt(15, 18));
 
 // Задание 8
-console.log(newDate());
+console.log(new Date());
 
 // Задание 9
 
@@ -69,11 +69,11 @@ function formatDate(date) {
     const day = date.getDate();
     const dayOfWeek = days[date.getDay()];
     const hours = date.getHours();
-    const minutes = date.getVinutes();
+    const minutes = date.getMinutes();
     const seconds = date.getSeconds();
 
     return`
-    Дата: ${days} ${month[months]} ${year} — это ${dayOfWeek}.
+    Дата: ${day} ${months[month]} ${year} — это ${dayOfWeek}.
     Время: ${hours}:${minutes}:${seconds}`;
 }   
 console.log(formatDate(new Date()));
