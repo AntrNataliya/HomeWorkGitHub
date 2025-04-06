@@ -1,0 +1,27 @@
+@media (max-width: 1024px) {
+
+    .center {
+        padding-left: 57px;
+        padding-right: 56px;
+    }
+
+    .card {
+        max-height: unset;
+        &__text {
+            font-size: 18px;
+        }
+    }
+
+    .card__box {
+        grid-column: span 6;
+        &_top {
+           margin-top: 0px;
+        }
+    }
+    .mini-card__img {
+        max-width: 400px;
+    }
+    .mini-card__name {
+        font-size: 38px;
+    }
+}
