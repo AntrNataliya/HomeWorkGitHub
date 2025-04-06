@@ -92,4 +92,4 @@ function reverseWord() {
     let reversedText = text.split('').reverse().join('');
     alert (reversedText);
 }
-reverseWord();
+// reverseWord();
