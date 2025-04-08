@@ -30,5 +30,15 @@
         });      
 
     </script>   
+     <h1 class="title3">Задание 3. Динамическое измение текста</h1>
+     <button class="btn">Изменить текст</button>
+     <script>
+         const btn = document.querySelector('.btn');
+         const title3 = document.querySelector('.title3');
+         
+         btn.addEventListener('click', () => {
+             title3.textContent = 'Привет, мир!';
+        });
+     </script>
 </body>
 </html>
