@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 class="title">Задание 1 скрыть-показать заголовок.</h1>
+    <button class="button">Скрыть заголовок</button>
+
+    <p class="text">Задание 2. Изменить цвет текста в абзаце. <br>
+        Сложные комбинированные селекторы в JavaScript помогают находить элементы на странице с высокой точностью: 
+        они сочетают разные типы селекторов и позволяют точнее выбирать элементы.</p>
+    <button id="change_text">Изменить текст</button>
+
+    <script>
+        const title = document.querySelector('.title');
+        const button = document.querySelector('.button');
+        button.addEventListener('click', function () {
+            title.style.display = title.style.display === 'none'? 'block' : 'none';
+        });
+    </script>
+
+    <script>
+        const text = document.querySelector('.text');
+        const change_text = document.querySelector('#change_text');
+        change_text.addEventListener('click', function () {
+            text.style.color = 'blue';
+        });      
+
+    </script>   
+     <h1 class="title3">Задание 3. Динамическое измение текста</h1>
+     <button class="btn">Изменить текст</button>
+     <script>
+         const btn = document.querySelector('.btn');
+         const title3 = document.querySelector('.title3');
+         
+         btn.addEventListener('click', () => {
+             title3.textContent = 'Привет, мир!';
+        });
+     </script>
+</body>
+</html>
