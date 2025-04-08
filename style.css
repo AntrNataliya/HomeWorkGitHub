@@ -167,7 +167,6 @@ button {
 
 .card__img {
   border-radius: 30px;
-  height: 314px;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -237,7 +236,6 @@ button {
 .mini-card__inf {
   padding: 48px;
   display: flex;
-  flex-wrap: wrap;
   flex-direction: column;
   align-items: flex-start;
 }
@@ -272,7 +270,6 @@ button {
   width: 247px;
 }
 .mini-card__img {
-  max-width: 600px;
   max-height: 500px;
   border-radius: 30px;
 }
@@ -373,5 +370,29 @@ button {
   }
   .mini-card_L {
     flex-direction: column-reverse;
+  }
+}
+@media (max-width: 1024px) {
+  .center {
+    padding-left: 57px;
+    padding-right: 56px;
+  }
+  .card {
+    max-height: unset;
+  }
+  .card__text {
+    font-size: 18px;
+  }
+  .card__box {
+    grid-column: span 6;
+  }
+  .card__box_top {
+    margin-top: 0px;
+  }
+  .mini-card__img {
+    max-width: 400px;
+  }
+  .mini-card__name {
+    font-size: 38px;
   }
 }/*# sourceMappingURL=style.css.map */
