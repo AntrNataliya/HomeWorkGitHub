@@ -2,6 +2,9 @@
     margin: 0px;
     padding: 0px;
 }
+.html {
+    scroll-behavior: smooth;
+}
 
 a {
     text-decoration: none;
@@ -82,8 +85,11 @@ button {
     background-color: white;
     color: black;
 }
-
-.scrollbar {
+@keyframes scroll {
+    0% { transform: translateX(0); } 
+    100% { transform: translateX(-100%); } 
+  }
+.scroll {
     height: 90px;
     display: flex;
     align-items: center;
@@ -91,9 +97,18 @@ button {
     backdrop-filter: blur(50px);
     background: rgb(188, 236, 48);
     overflow: hidden;
-    max-height: 87px;
-    
+    max-height: 87px;    
 }
+.scrollbar {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    animation: scroll 10s infinite linear;
+}
+
 
 .scrollbar__item {
     display: flex;   
@@ -293,3 +308,4 @@ button {
 }
 
 @import 'mobile';
+@import 'tablet'
