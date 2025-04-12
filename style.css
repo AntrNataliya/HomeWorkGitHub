@@ -289,8 +289,8 @@ button {
 
 @media (max-width: 767px) {
   .center {
-    padding-left: 57px;
-    padding-right: 56px;
+    padding-left: calc(50% - 171.5px);
+    padding-right: calc(50% - 171.5px);
   }
   .header {
     background: #E1FF8F;

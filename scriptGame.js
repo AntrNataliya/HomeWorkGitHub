@@ -144,3 +144,19 @@ function rockScissorsPaperGame() {
                         
     } while (!regexp.test(playerEnter));
 }
+
+// Игра 6 //
+
+function getRandomColor() {
+    const colors = '123456789ABCDEF';
+    let color = '#';
+    for (let i = 0; i < 6; i++) {
+        color += colors[Math.floor(Math.random() * 16)];
+    }
+    return (color);
+}
+const changeColorEL = document.getElementById('changeColor');
+changeColorEL.addEventListener('click', () => {
+    const miniGames = document.getElementById('the-generator');
+    miniGames.style.backgroundColor = getRandomColor();
+});
