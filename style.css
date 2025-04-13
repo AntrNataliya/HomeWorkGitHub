@@ -26,8 +26,8 @@ button {
 
 .header {
   background: #E1FF8F;
-  background-image: url(images/star1.png), url(images/star2.png), url(images/starbig.svg);
-  background-position: 63px 69px, calc(100% - 344px) calc(100% - 149px), 230% -330px;
+  background-image: url(images/star1.png), url(images/star2.png), url(images/star3.svg);
+  background-position: 63px 69px, 100% 0px, calc(100% - 344px) calc(100% - 149px);
   background-repeat: no-repeat;
 }
 
@@ -136,6 +136,9 @@ button {
   align-items: flex-start;
   align-self: stretch;
   background: #202027;
+  background-image: url(./images/Star4.png), url(./images/star5.png);
+  background-repeat: no-repeat;
+  background-position: 100% 77px, 25px 770px;
 }
 
 .games-container__title {
@@ -231,6 +234,9 @@ button {
   flex-wrap: wrap;
   flex-direction: column;
   background: rgb(32, 32, 39);
+  background-image: url(./images/Group1minigame.png), url(./images/Group2minigame.png);
+  background-repeat: no-repeat;
+  background-position: 1281px 93px, 1249px calc(100% - 45px);
 }
 .mini-games__title {
   color: rgb(255, 255, 255);
@@ -316,8 +322,8 @@ button {
   }
   .header {
     background: #E1FF8F;
-    background-image: url(images/star1.png), url(images/star2.png), url(img/Vectormob.svg);
-    background-position: 63px 69px, calc(100% - 344px) calc(100% - 149px), 100% 0px;
+    background-image: url(images/star1.png), url(images/starGroup2.png), url(images/Starmob3.png);
+    background-position: 39px 73px, 423px 680px, 123% -78px;
     background-repeat: no-repeat;
     display: flex;
     flex-direction: column;
