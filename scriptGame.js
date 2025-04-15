@@ -1,6 +1,5 @@
-const hiddenNumber = Math.floor(Math.random() * 100) + 1;
-
 function game1() {
+    const hiddenNumber = Math.floor(Math.random() * 100) + 1;
    while (true) {
     const input = Number(prompt('Попробуй угадать число от 1 до 100'));
     if (input === 0) {
